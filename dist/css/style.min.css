@@ -1,0 +1,295 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  width: 100vw;
+  font-family: 'Inter', sans-serif;
+  transition: background 400ms linear;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  color: #63687e;
+}
+
+.overview {
+  margin: 4rem 0;
+}
+
+.lime-green {
+  color: #1db489;
+}
+
+.bright-red {
+  color: #dc414c;
+}
+
+.border1 {
+  border-top: 5px solid #198ff5;
+}
+
+.border2 {
+  border-top: 5px solid #1ca0f2;
+}
+
+.border3 {
+  border-top: 5px solid;
+  border-image: linear-gradient(to left, #fdc468 1%, #df4996 100%);
+  border-image-slice: 1;
+}
+
+.border4 {
+  border-top: 5px solid #c4032a;
+}
+
+.main {
+  width: 100vw;
+  height: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .main {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
+.main .background {
+  position: absolute;
+  background-color: #f5f7ff;
+  top: 0;
+  left: 0;
+  bottom: 455px;
+  right: 0;
+  z-index: -1;
+}
+
+@media (max-width: 700px) {
+  .main .background {
+    bottom: 400px;
+  }
+}
+
+.main .header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 700px) {
+  .main .header {
+    flex-direction: column;
+  }
+}
+
+.main .header small {
+  color: #63687e;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.main .header span {
+  color: #63687e;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.main .header-btn {
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  .main .header-btn {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 3px solid #aeb3cb;
+  }
+}
+
+.main .header-btn .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.main .header-btn .checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.main .header-btn .label {
+  position: relative;
+  background-color: #aeb3cb;
+  width: 50px;
+  height: 26px;
+  padding: 2px;
+  border-radius: 50px;
+  display: flex;
+}
+
+.main .header-btn .ball {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  border-radius: 50px;
+  background-color: white;
+  transition: transform 0.2s linear;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .section {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section p {
+  color: #63687e;
+  letter-spacing: .2rem;
+}
+
+.section-container {
+  position: relative;
+  z-index: 1;
+  background-color: #f0f2fa;
+  padding: 2rem 4rem;
+  border-radius: 5px;
+  text-align: center;
+  transition: background 200ms ease-in-out;
+}
+
+@media (max-width: 700px) {
+  .section-container:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.section-container:hover {
+  cursor: pointer;
+  background: #aeb3cb;
+  opacity: .7;
+}
+
+.section-container .section-top {
+  padding-bottom: 1rem;
+}
+
+.section-container .section-top a {
+  text-decoration: none;
+  margin-right: 1px;
+}
+
+.section-container .section-top span {
+  color: #1e202a;
+  opacity: .7;
+}
+
+.section-container .section-line {
+  padding-top: 2rem;
+}
+
+.section-bottom {
+  background-color: #f0f2fa;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  transition: background 200ms ease-in-out;
+}
+
+.section-bottom:hover {
+  cursor: pointer;
+  background: #aeb3cb;
+}
+
+.section-bottom .section-flex h4 {
+  line-height: none;
+  color: #63687e;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.section-bottom .section-flex small {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.section-bottom .section-right .image {
+  margin-left: 1rem;
+  padding-bottom: 3rem;
+}
+
+body.dark {
+  background-color: #1e202a;
+  color: white;
+}
+
+body.dark h2 {
+  color: white;
+}
+
+body.dark .header small {
+  color: #8b97c6;
+}
+
+body.dark .header span {
+  color: #8b97c6;
+}
+
+body.dark .header {
+  color: #8b97c6;
+}
+
+body.dark .header .header-btn .label {
+  background: linear-gradient(#378fe6, #3eda82);
+}
+
+body.dark .section-top span {
+  color: #8b97c6;
+}
+
+body.dark .section-container {
+  background-color: #252a41;
+}
+
+body.dark .section-container:hover {
+  background: #8b97c6;
+  opacity: .7;
+}
+
+body.dark .background {
+  background-color: #1f212e;
+}
+
+body.dark .section p {
+  color: #8b97c6;
+}
+
+body.dark .section-bottom {
+  background-color: #252a41;
+}
+
+body.dark .section-bottom h4 {
+  color: #8b97c6;
+}
+
+body.dark .section-bottom:hover {
+  background: #8b97c6;
+  opacity: .7;
+}
+/*# sourceMappingURL=style.min.css.map */

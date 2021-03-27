@@ -1,0 +1,68 @@
+*, 
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:$White-BG;
+    width: 100vw;
+    font-family: 'Inter', sans-serif;
+    transition: background 400ms linear;
+}
+
+
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h2{
+    color:$Dark-Grayish-Blue-Text;
+}
+
+.overview{
+    margin: 4rem 0;
+}
+
+.lime-green{
+    color: $Lime-Green;
+}
+.bright-red{
+    color: $Bright-Red;
+}
+
+.border1{
+    border-top: 5px solid $Facebook;
+}
+.border2{
+    border-top: 5px solid $Twitter;
+}
+
+.border3{
+    border-top: 5px solid ;
+    border-image:linear-gradient(to left, hsl(37, 97%, 70%) 1%, hsl(329, 70%, 58%) 100%);
+    border-image-slice: 1;
+
+    
+}
+
+.border4{
+    border-top: 5px solid $YouTube;
+}
+
+
+@mixin mobile{
+    @media (max-width:700px){
+        @content;
+    }
+}
+
+
+@mixin  tablet {
+    @media (min-width: 60em){
+        @content;
+    }
+}

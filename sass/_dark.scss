@@ -1,0 +1,58 @@
+body.dark{
+    background-color: $Very-Dark-Blue-BG;
+    color: $White-text;
+}
+
+body.dark h2{
+    color:$White-text;
+}
+body.dark .header small{
+    color: $Desaturated-Blue-text;
+}
+
+body.dark .header span{
+    color: $Desaturated-Blue-text;
+}
+body.dark .header{
+    color: $Desaturated-Blue-text;
+}
+
+body.dark .header .header-btn .label{
+    background: $Toggle-dark;
+}
+
+body.dark .section-top span{
+    color: $Desaturated-Blue-text;
+}
+
+body.dark .section-container{
+    background-color: $Dark-Desaturated-Blue-card-BG;
+}
+
+body.dark .section-container:hover{
+    background: $Desaturated-Blue-text;
+    opacity: .7;
+
+}
+
+body.dark .background{
+    background-color: $Very-Dark-Blue-top-BG-pattern;
+}
+
+
+body.dark .section p{
+    color:$Desaturated-Blue-text;
+}
+
+body.dark .section-bottom{
+    background-color: $Dark-Desaturated-Blue-card-BG;
+}
+
+body.dark .section-bottom h4{
+    color: $Desaturated-Blue-text;
+}
+
+body.dark .section-bottom:hover{
+    background: $Desaturated-Blue-text;
+    opacity: .7;
+}
