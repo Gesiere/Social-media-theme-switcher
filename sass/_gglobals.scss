@@ -10,7 +10,7 @@ body{
     background-color:$White-BG;
     width: 100vw;
     font-family: 'Inter', sans-serif;
-    transition: background 300ms linear;
+    transition: background 300ms ease-in;
 }
 
 
