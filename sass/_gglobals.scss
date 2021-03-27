@@ -8,9 +8,9 @@
 
 body{
     background-color:$White-BG;
-    width: 100vw;
+    width: 100%;
     font-family: 'Inter', sans-serif;
-    transition: background 300ms ease-in;
+    transition: background 300ms linear;
 }
 
 

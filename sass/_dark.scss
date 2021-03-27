@@ -9,6 +9,11 @@ body.dark h2{
 body.dark .header small{
     color: $Desaturated-Blue-text;
 }
+body.dark .main .header-btn{
+    @include mobile{
+        border-top: $Very-Dark-Blue-top-BG-pattern;
+    }
+}
 
 body.dark .header span{
     color: $Desaturated-Blue-text;
@@ -21,6 +26,10 @@ body.dark .header .header-btn .label{
     background: $Toggle-dark;
 }
 
+body.dark .header .header-btn .ball{
+    background-color: $Very-Dark-Blue-BG;
+}
+
 body.dark .section-top span{
     color: $Desaturated-Blue-text;
 }
@@ -30,8 +39,8 @@ body.dark .section-container{
 }
 
 body.dark .section-container:hover{
-    background: $Desaturated-Blue-text;
-    opacity: .7;
+    background: $Dark-Grayish-Blue-Text;
+
 
 }
 
@@ -53,6 +62,5 @@ body.dark .section-bottom h4{
 }
 
 body.dark .section-bottom:hover{
-    background: $Desaturated-Blue-text;
-    opacity: .7;
+    background: $Dark-Grayish-Blue-Text;
 }
